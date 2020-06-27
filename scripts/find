@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+cat ./word_list.txt | sed "s/,/\n/g" | sed "/^.\{${1}\}$/!d"
